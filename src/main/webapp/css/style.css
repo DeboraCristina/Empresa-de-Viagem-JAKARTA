@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #22092C;
+    /* background-image: linear-gradient(180deg, #872341, #22092C); */
+    background-image: linear-gradient(180deg, #22092C, #872341);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo {
+    color: wheat;
+    text-align: center;
+    text-shadow: 2px 2px 0px black;
+}
+
+h1, h2, h3, h4 {
+    color: #af1515;
+    margin: 0 0 10px 0;
+}
+
+.erro {
+    color: tomato;
+}
+
+main {
+    text-align: center;
+
+    background-color: #ffffffdd;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.502);
+
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+p {
+    color: #22092C;
+    font-size: 14pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+main div input[type=text], [type=number], select {
+    flex: 1;
+}
+
+label {
+    min-width: 80px;
+    width: fit-content;
+    font-weight: 100;
+    background-color: rgba(55, 41, 145, 0.2);
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+input[type=text], [type=number], select, input[type=date], input[type=date], input[type=datetime], input[type=email], input[type=month], input[type=password], input[type=range], input[type=tel], input[type=time], input[type=week] {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 8px 10px;
+
+    background-color: #e6dae1;
+    color: black;
+
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #BE3144;
+    font-size: 1em;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    width: 100%;
+
+}
+/* input[type=submit]#buscar {
+    width: 20%;
+} */
+  
+input[type=submit]:hover {
+    background-color: #992837;
+}
+
+header{
+    padding: 10px 20px;
+    margin: 8px 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #87234100;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12pt;
+    padding: 3px 8px;
+    
+    border: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: #BE3144;
+}
+
+header a:hover {
+    color: #ccc;
+    border-bottom-color: #992837;
+}
+
+/* Tabela */
+
+.tabela_container {
+    display: block;
+    height: 150px;
+    overflow-y: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+table th, table td {
+    border: 1px solid #22092C;
+    border-radius: 2px;
+    text-align: center;
+}
+
+table th {
+    text-align: center;
+    background-color: #F059417e;
+}
+
+table td {
+    background-color: #e6dae1;
+}
+
+/* Scroll */
+*::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #F059417e; /* Cor da alça (barra de rolagem) */
+    border-radius: 6px; /* Borda arredondada da alça */
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #ffffff00; /* Cor do fundo da barra de rolagem */
+}
+
+/* Estilos para Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #F059417e #ffffff00;
+}
+
